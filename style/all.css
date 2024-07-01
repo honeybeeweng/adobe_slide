@@ -32,6 +32,7 @@ a {
     top: 50%;
     right: 1rem;
     margin-top: -117px;
+    z-index: 10;
 }
 
 .nav-active {
@@ -62,6 +63,10 @@ a {
 
 .nav-btn-index {
     background-color: black;
+}
+
+.nav-btn:disabled {
+    opacity: 1;
 }
 
 /* article------------------------- */
@@ -96,6 +101,8 @@ a {
 
 .grid-slide {
     gap: 0;
+    transition-duration: .7s;
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .grid-2 {
